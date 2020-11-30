@@ -5,6 +5,8 @@ using namespace std;
 int party_id;
 Tcp_Connection *tcp;
 
+// sampleコード
+
 int main(int argc, char *argv[]){
     
     //前処理
@@ -39,6 +41,8 @@ int main(int argc, char *argv[]){
     Reconst(&ans.val,1,&reconst_ans);
     cout<<"x*y  :  "<<reconst_ans<<endl;
 
+
+    // 後処理
     CR.program_finish();
     delete[] tcp;
     return 0;

@@ -25,8 +25,6 @@ void rand_seed::next_rand(unsigned char *out){
     update();
 }
 
-// todo : gen_random_mは書き換えたほうがいいかも
-// todo : mが素数のときは以下のままでいいかもだけど，2べきのときは少し効率が落ちているはず
 void gen_random_m(rand_seed &seed, integer_t *ans,int num,integer_t p, int num_char){
     num_char++;
     if(num_char<=2) num_char = 2;
@@ -166,8 +164,7 @@ void BT_gen_p(rand_seed &seed,
     // Beaver Triple (over Z_p) for multi_fan_in gate. [Ohata et al., FC 2020]
     // num_char : pのバイト数（切り上げ）
     // the length of ans is equal to (2^fan_num -1) * num
-    // ! p*pがオーバーフローするとバグります
-        int len = ((1<<fan_num) - 1);
+    int len = ((1<<fan_num) - 1);
     int total_len = len * num;
     integer_t *temp = new integer_t[total_len + num * fan_num];
     gen_random_m(seed, temp, total_len + num * fan_num, p, num_char);

@@ -10,7 +10,7 @@
 #include <errno.h>
 #include <iostream>
 #include "common.h"
-#include "envinfo.h"
+
 
 inline void from_bytes(int num, integer_t *vals, char* str, int num_char){
   for(int i=0;i<num;i++){
@@ -52,7 +52,6 @@ struct Tcp_Client{
 };
 
 
-// todo : boolのsend/receiveはまだデバッグしていない
 struct Tcp_Connection{
     int id;
     int other_id;
