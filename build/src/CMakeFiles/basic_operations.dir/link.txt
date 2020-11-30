@@ -1,2 +1,0 @@
-/usr/bin/ar qc libbasic_operations.a  CMakeFiles/basic_operations.dir/basic_operation.cpp.o CMakeFiles/basic_operations.dir/data_type.cpp.o
-/usr/bin/ranlib libbasic_operations.a
