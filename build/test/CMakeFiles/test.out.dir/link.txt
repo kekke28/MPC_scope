@@ -1,0 +1,1 @@
+/usr/bin/c++  -g -maes -msse4  -rdynamic CMakeFiles/test.out.dir/test.cpp.o  -o test.out  ../src/libbasic_operations.a ../header/libscope_header.a 

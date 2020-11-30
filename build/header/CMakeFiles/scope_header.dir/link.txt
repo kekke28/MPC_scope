@@ -1,0 +1,2 @@
+/usr/bin/ar qc libscope_header.a  CMakeFiles/scope_header.dir/CR.cpp.o CMakeFiles/scope_header.dir/tcp_connection.cpp.o
+/usr/bin/ranlib libscope_header.a

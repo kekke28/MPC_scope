@@ -1,0 +1,1 @@
+add_library(basic_operations STATIC basic_operation.cpp data_type.cpp)
