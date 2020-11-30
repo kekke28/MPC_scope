@@ -64,7 +64,13 @@ gcc 9.3.0
 での動作は確認している．
 
 # 使い方
-
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+を実行するとサンプルコード(test.cpp)の実行コード(test.out)がbuildフォルダ内に生成される．ターミナルを3つ立ち上げ，それぞれで`./test.out 2`, `./test.out 1`, `./test.out 0`と実行すると，プログラムが実行される．（./test.outに渡している引数はparty_id. Party 1,2が実質の秘密計算を行い，Party 0はBTEの生成，分配を行っている．）
 
 # 謝辞
 本開発は総務省SCOPE(受付番号 182103105)の援助を受けたものである．
